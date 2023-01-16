@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
+body{
+    font-family: 'Anton', sans-serif;
+    background-color: #439A97;
+}
+
+#titulo {
+    color:#e6eee8;
+    font-size: 50px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .tarjetas-ataques{
+display: flex;
+gap: 10px;
+}
+
+.subtitulo{
+    color:#e6eee8;
+    font-size: 30px;
+}
+
+.tarjeta-de-mokepon{
+    color:#e6eee8;
+
+    width: 180px;
+    height: 100px;
+    background: #62B6B7;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #97DECE;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mensajes{
+    width: 200px;
+    background-color: #2b6361;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: #CBEDD5;
+    flex-direction: column;
+}
+
+.ataque{
+    background: #62B6B7;  
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #97DECE;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+
+    
+}
+
+#boton-reset{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background: #2b6361;
+}
+.ataque:hover{
+    background: #2b6361;
+
+}
+
+@media(max-width:360px){
+
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
